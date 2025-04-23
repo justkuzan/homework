@@ -25,18 +25,14 @@ namespace Homework
 
             for (int i = 0; i <= generatedNumber; i++)
             {
-                if (i % 3 != 0 && i % 5 != 0)
+                if (i % 3 == 0 || i % 5 == 0)
                 {
-                    continue;
+                    Console.Write($"Число кратное 3 или 5: {i} ");
+                    Console.WriteLine();
+                    sumResult += i;
                 }
-                sumResult += i;
-                Console.Write($"Число кратное 3 или 5: {sumResult} ");
-                Console.WriteLine();
             }
             Console.Write($"Сумма чисел:{sumResult}");
-            
-            
-            
         }
     }
 }
