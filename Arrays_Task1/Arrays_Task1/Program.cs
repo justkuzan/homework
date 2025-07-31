@@ -1,4 +1,5 @@
-﻿using System;
+﻿// Работа с конкретными строками/столбцами
+using System;
 
 class Program
 {
