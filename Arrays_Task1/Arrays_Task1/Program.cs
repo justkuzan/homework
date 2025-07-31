@@ -16,23 +16,18 @@ class Program
                 Console.Write(array[i, j] + " ");
                 if (i == 1)
                 {
-                   sum += array[i, j];
+                    sum += array[i, j];
                 }
             }
+
             multiply *= array[i, 0];
             Console.WriteLine();
         }
 
         Console.Write("\nSum of the second line: ");
         Console.WriteLine(sum);
-        
+
         Console.Write("Product of the first column: ");
         Console.WriteLine(multiply);
-        
-       
-
-
-
-
     }
 }
