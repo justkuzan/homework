@@ -7,7 +7,8 @@ public class Program
     private static void Main()
     {
         var array = new int[0];
-        Greetings();
+        
+        Instruction();
         
         while (true)
         {
@@ -37,23 +38,13 @@ public class Program
 
             else
             {
-                TypingError();
+                Console.WriteLine("Unknown symbol.\n");
+                Instruction();
             }
-        }
-
-        static void Greetings()
+        } 
+        static void Instruction()
         {
-            Console.WriteLine("Good day!");
-            Console.WriteLine("\nEnter number" +
-                              "\nOr \"sum\" for sum" +
-                              "\nOr \"exit\" for exit\n");
-            Console.WriteLine("Enter numbers into the array:");
-        }
-
-        static void TypingError()
-        {
-            Console.WriteLine("\nUnknown symbol." +
-                              "\nEnter number" +
+            Console.WriteLine("Enter number" +
                               "\nOr \"sum\" for sum" +
                               "\nOr \"exit\" for exit\n");
         }
